@@ -6,13 +6,11 @@ import './App.css';
 function App() {
 
   const [count , SetCount] = useState(0)
-
   const inc = () => {
     SetCount(count + 1);
   }
-
   const dec = () => {
-    SetCount(count - 1);
+      SetCount(count > 0 ? count-1 : 0);  
   }
 
 
